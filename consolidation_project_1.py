@@ -11,13 +11,14 @@ def choose_word():
 # Welcomes player into the game
 print("Welcome to the Word Guessing Game!")
 
+# Variables needed for counters and guesses
 word = choose_word()
 letters_guessed = []
 words_guessed = []
 letter_counter = 0
 word_counter = 0
 
-# The while loop that processes the entire game
+# The while loop that processes the entire game with its conditionals and counters
 while word_counter in range (3):
     guess = input("Guess a letter or guess the secret word: ")
     if len(guess) == 1:
@@ -46,6 +47,7 @@ while word_counter in range (3):
                 print(f"You have used up all your tries for the word. The secret word was {word}.")
                 break
 
+# The results, which incude letters guessed, words guessed, and the final score.
 print(f"This is the number of letters you guessed: {letter_counter}")
 print(f"This is the number of words you guessed: {word_counter}")
 print(f"Your final score is {letter_counter}.")
