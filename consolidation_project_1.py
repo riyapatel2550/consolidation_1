@@ -42,6 +42,10 @@ while word_counter in range (3):
             print("That is not the word.")
             words_guessed.append(guess)
             word_counter += 1
-            if len(word_counter) == 3:
+            if len(words_guessed) == 3:
                 print(f"You have used up all your tries for the word. The secret word was {word}.")
                 break
+
+print(f"This is the number of letters you guessed: {letter_counter}")
+print(f"This is the number of words you guessed: {word_counter}")
+print(f"Your final score is {letter_counter}.")
