@@ -9,10 +9,11 @@ def choose_word():
     return random.choice(word_bank)
 
 # Welcomes player into the game
-print("Welcome to the Word Guessing Game!")
-
-# Variables needed for counters and guesses
 word = choose_word()
+print("Welcome to the Word Guessing Game!")
+print("The theme of the words is Holidays!")
+print(f"The word has {len(word)} letters.")
+# Variables needed for counters and guesses
 letters_guessed = []
 words_guessed = []
 letter_counter = 0
@@ -27,6 +28,7 @@ while word_counter in range (3):
             count = word.count(guess)
             if count == 1:
                 print(f"The letter {guess} appears once in the word.")
+                letter_counter += 1
             else:
                 print(f"The letter {guess} appears {count} times in the word.")
                 letter_counter += 1
