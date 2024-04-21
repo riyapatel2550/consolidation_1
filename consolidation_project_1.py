@@ -27,6 +27,10 @@ while word_counter in range (3):
             if count == 1:
                 print(f"The letter {guess} appears once in the word.")
             else:
-                print("There are", count, "occurrences of the letter", guess)
+                print(f"The letter {guess} appears {count} times in the word.")
                 letter_counter += 1
-                
+        else:
+            print(f"The letter {guess} is not in the word.")
+            letters_guessed.append(guess)
+            letter_counter += 1
+    elif 
