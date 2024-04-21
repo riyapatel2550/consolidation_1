@@ -18,8 +18,7 @@ letter_counter = 0
 word_counter = 0
 
 # The while loop that processes the entire game
-turns = 0
-while turns in range (3):
+while word_counter in range (3):
     guess = input("Guess a letter or guess the secret word: ")
     if len(guess) == 1:
         if guess in word:
@@ -27,3 +26,7 @@ while turns in range (3):
             count = word.count(guess)
             if count == 1:
                 print(f"The letter {guess} appears once in the word.")
+            else:
+                print("There are", count, "occurrences of the letter", guess)
+                letter_counter += 1
+                
