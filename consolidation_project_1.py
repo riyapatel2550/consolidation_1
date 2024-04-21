@@ -32,5 +32,16 @@ while word_counter in range (3):
         else:
             print(f"The letter {guess} is not in the word.")
             letters_guessed.append(guess)
-            letter_counter += 1
-    elif 
+            letter_counter += 1 
+    elif len(guess) > 1:
+        if guess == word:
+                print(f"You have guessed the word! The secret word is {word}.")
+                word_counter += 1
+                break
+        else:
+            print("That is not the word.")
+            words_guessed.append(guess)
+            word_counter += 1
+            if len(word_counter) == 3:
+                print(f"You have used up all your tries for the word. The secret word was {word}.")
+                break
