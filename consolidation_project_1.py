@@ -53,4 +53,3 @@ while word_counter in range (3):
 print(f"This is the number of letters you guessed: {letter_counter}")
 print(f"This is the number of words you guessed: {word_counter}")
 print(f"Your final score is {letter_counter}.")
-print ("hello world")
